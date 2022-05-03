@@ -12,10 +12,16 @@ if choice == "a":
   M2C1R2 = int(input("matricie2-column1-row2:\n"))
   M2C2R1 = int(input("matricie2-column2-row1:\n"))
   M2C2R2 = int(input("matricie2-column2-row2:\n"))
-  print(f"R1,C1 = ({M1C1R1}*{M2C1R1})+({M1C2R1}*{M2C1R2})")
-  print(f"R1,C2 = ({M1C1R1}*{M2C2R1})+({M1C2R1}*{M2C2R2})")
-  print(f"R2,C1 = ({M1C1R2}*{M2C1R1})+({M1C2R2}*{M2C1R2})")
-  print(f"R2,C2 = ({M1C1R2}*{M2C2R1})+({M1C2R2}*{M2C2R2})")
+
+  M3R1C1 = ({M1C1R1}*{M2C1R1})+({M1C2R1}*{M2C1R2})
+  M3R1C2 = ({M1C1R1}*{M2C2R1})+({M1C2R1}*{M2C2R2})
+  M3R2C1 = ({M1C1R2}*{M2C1R1})+({M1C2R2}*{M2C1R2})
+  M3R2C2 = ({M1C1R2}*{M2C2R1})+({M1C2R2}*{M2C2R2})
+  print(M3R1C1)
+  print(M3R1C2)
+  print(M3R2C1)
+  print(M3R2C2)
+  
 if choice == "b":
   M1C1R1 = int(input("matricie1-column1-row1:\n"))
   M1C1R2 = int(input("matricie1-column1-row2:\n"))
